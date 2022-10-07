@@ -38,6 +38,6 @@ services:
     volumes:
       - ./docker/db/scripts/trains:/docker-entrypoint-initdb.d
       - ./db/data:/var/lib/postgresql/data
-      - ./docker/db/config/trains/postgresql.conf:/var/lib/postgresql/data/pgdata-trains-6/postgresql.conf
+      - ./docker/db/config/trains/postgresql.conf:/var/lib/postgresql/data/pgdata-trains/postgresql.conf
     ports:
       - "6111:5432"
